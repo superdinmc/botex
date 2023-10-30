@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node ."
   },
   "keywords": [],
   "author": "",
@@ -14,5 +14,8 @@
     "discord.js": "^14.13.0",
     "typescript": "^5.2.2",
     "yaml": "^2.3.3"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
   }
 }

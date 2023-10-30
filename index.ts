@@ -18,6 +18,7 @@ bot.on('messageCreate',message=>{
     const fn = config.responses.find((e: {regex: string,flag?: string})=>(new RegExp(e.regex,e.flag||'mi')).test(cont));
     if(!fn) return;
     const match = cont.match(new RegExp(fn.regex));
+    const _: object = {...message,match};
     const result = eval('`'+fn.response+'`'); //for ${} supports, although this is exploitable, but these codes are only accessible by the bot owner anyways.
     message.reply(result);
 })
