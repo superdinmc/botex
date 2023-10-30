@@ -2,7 +2,7 @@ token: #bot token here
 responses:
   - regex: '^(?:hi|hello|:wave:)'
     flag: i # ignore cases
-    response: 'Hello ${_.user.username} :wave:' # _ is where all placeholders are stored
+    response: 'Hello ${_.author.username} :wave:' # _ is where all placeholders are stored
     # use ${} to insert javascript code, never let anyone untrusted edit this code.
     # _.match[] is where groups from regex will be stored
   - regex: '^\!ban (.+)'
