@@ -5,3 +5,5 @@ responses:
     response: 'Hello ${_.user.username} :wave:' # _ is where all placeholders are stored
     # use ${} to insert javascript code, never let anyone untrusted edit this code.
     # _.match[] is where groups from regex will be stored
+  - regex: '^\!ban (.+)'
+    action: 'message.guild...' # example for action commands
