@@ -1,0 +1,5 @@
+token: 
+responses:
+  - regex: '^(?:hi|hello|:wave:)'
+    flag: i # ignore cases
+    response: 'Hello ${_.user.username} :wave:'
